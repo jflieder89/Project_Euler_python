@@ -22,7 +22,6 @@ def factor_count(n):
     if n % sqrt(n) == 0:
         count += 1 #sqrt does not come in a pair!
     return count
-print(factor_count(28))
 
 #now solve the prompted problem:
 def divisibleTriangleNumber(n):
@@ -31,7 +30,6 @@ def divisibleTriangleNumber(n):
     while factor_count(triangle_count) < n:
         dummy += 1 #go to the next amount needed to add to get the next triangle number
         triangle_count += dummy #go to the next triangle number
-        print(triangle_count)
     return triangle_count
 
 print(divisibleTriangleNumber(500))
